@@ -11,6 +11,6 @@ class Text < ApplicationRecord
     git: 2,
     ruby: 3,
     rails: 4,
-    php: 5,
+    php: 5
   }
 end
