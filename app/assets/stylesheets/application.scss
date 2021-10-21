@@ -11,36 +11,34 @@ body{
 }
 
 .base-container {
-    margin: 0 auto;
-    padding: 1rem;
+  margin: 0 auto;
+  padding: 1rem;
 }
-
 
 /* max-width */
 
 .mw-sm {
-    max-width: 576px;
+  max-width: 576px;
 }
 
 .mw-md {
-    max-width: 768px;
+  max-width: 768px;
 }
 
 .mw-lg {
-    max-width: 992px;
+  max-width: 992px;
 }
 
 .mw-xl {
-    max-width: 1200px;
+  max-width: 1200px;
 }
-
 
 /* フラッシュ */
 
 .alert-notice {
-    @extend .alert-success;
+  @extend .alert-success;
 }
 
 .alert-alert {
-    @extend .alert-danger;
+  @extend .alert-danger;
 }
