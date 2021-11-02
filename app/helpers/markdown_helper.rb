@@ -10,7 +10,7 @@ module MarkdownHelper
     {
       filter_html: false,
       hard_wrap: true,
-      link_attributes: { target: "_blank", rel: "noopener" },
+      link_attributes: { target: "_blank", rel: "noopener" }
     }
   end
 
@@ -23,7 +23,7 @@ module MarkdownHelper
       space_after_headers: true,
       hard_wrap: true,
       xhtml: true,
-      lax_html_blocks: true,
+      lax_html_blocks: true
     }
   end
 end
