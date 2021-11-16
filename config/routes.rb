@@ -6,7 +6,8 @@ Rails.application.routes.draw do
     post "users/guest_sign_in", to: "users/sessions#guest_sign_in"
   end
   resources :texts, only: [:index, :show]
-  resources :movies, only: [:index]
-  resources :watch_progresses, only: [:create, :destroy]
+  resources :movies, only: [:index] do
+    resource :watch_progresses, only: [:create, :destroy]
+  end
   root "texts#index"
 end
