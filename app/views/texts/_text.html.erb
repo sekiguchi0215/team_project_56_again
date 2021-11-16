@@ -6,7 +6,11 @@
       </div>
       <div class="card-body">
         <p>
-          <button type="button" class="btn btn-secondary" style="width: 100%;">読破済み</button>
+          <% if text.read_by?(current_user) %>
+            <%= link_to "読破済みを解除", text_read_progresses_path(text), method: :delete, class: "btn btn-block btn-primary" %>
+          <% else %>
+            <%= link_to "読破済みにする", text_read_progresses_path(text), method: :post, class: "btn btn-block btn-secondary" %>
+          <% end %>
         </p>
         <div class="card-text">
           <p><%= text.title %></p>
