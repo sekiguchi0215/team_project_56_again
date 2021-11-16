@@ -7,9 +7,9 @@
       <div class="card-body">
         <p>
           <% if text.read_by?(current_user) %>
-            <%= link_to "読破済みを解除", text_read_progresses_path(text), method: :delete, class: "btn btn-block btn-primary" %>
+            <%= render "unread_progress", text: text %>
           <% else %>
-            <%= link_to "読破済みにする", text_read_progresses_path(text), method: :post, class: "btn btn-block btn-secondary" %>
+            <%= render "read_progress", text: text %>
           <% end %>
         </p>
         <div class="card-text">
