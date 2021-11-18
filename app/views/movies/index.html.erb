@@ -5,4 +5,5 @@
   <div class= "row">
     <%= render partial: "movie", locals: { movie: @movie }, collection: @movies %>
   </div>
+  <%= paginate @movies %>
 </div>
