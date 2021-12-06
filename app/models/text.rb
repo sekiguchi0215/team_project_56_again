@@ -15,5 +15,7 @@ class Text < ApplicationRecord
   }
 
   RAILS_GENRE_LIST = %w[basic git ruby rails].freeze
-  PHP_GENRE_LIST = %w[php].freeze
+  def self.genre_list(genre)
+    genre == "php" ? %w[php] : %w[basic git ruby rails]
+  end
 end
